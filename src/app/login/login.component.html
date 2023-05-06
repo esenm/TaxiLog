@@ -1,15 +1,14 @@
-<h2>Login</h2>
-
-<form>
-  <div>
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username">
-  </div>
-
-  <div>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password">
-  </div>
-
-  <button type="submit" (click)="login()">Login</button>
-</form>
+<mat-card class="container">
+  <mat-card-content class="login">
+    <h2>Login</h2>
+    <form>
+      <mat-form-field>
+        <input matInput type="text" id="username" name="username" placeholder="Username">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="password" id="password" name="password" placeholder="Enter your password">
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="login()">Login</button>
+    </form>
+  </mat-card-content>
+</mat-card>
