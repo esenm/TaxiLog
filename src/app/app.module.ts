@@ -23,6 +23,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { ProfileComponent } from './profile/profile.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 
 @NgModule({
   declarations: [
@@ -48,7 +50,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatTabsModule,
     FormsModule,
     MatIconModule,
-    MatSelectModule
+    MatSelectModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

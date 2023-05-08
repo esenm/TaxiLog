@@ -3,11 +3,11 @@
     <mat-card-content class="add-drive">
       <div class="form-container">
         <mat-form-field>
-          <input matInput placeholder="Zeit" [(ngModel)]="time" type="time" required>
+          <input matInput placeholder="Zeit" [(ngModel)]="time" type="time">
         </mat-form-field>
         <button mat-raised-button color="primary" type="button" (click)="setNewDate()">JETZT!</button>
         <mat-form-field>
-          <input matInput placeholder="Ziel" [(ngModel)]="destination" type="text" required>
+          <input matInput placeholder="Ziel" [(ngModel)]="destination" type="text">
         </mat-form-field>
         <mat-form-field>
           <input matInput placeholder="Betrag" [(ngModel)]="amount" type="number">
