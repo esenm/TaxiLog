@@ -19,6 +19,9 @@ import { ButtonComponent } from './ui-components/button/button.component';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 
+import { MatSelectModule } from '@angular/material/select';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +43,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatToolbarModule,
     MatTabsModule,
     FormsModule,
-    MatIconModule
+    MatIconModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,10 +2,22 @@
     <mat-card-content class="add-drive">
       <div class="form-container">
         <mat-form-field>
-          <input matInput placeholder="Enter your name" [value]="currentDate | date:'HH:mm'" type="time">
+          <input matInput placeholder="Zeit" [value]="currentDate | date:'HH:mm'" type="time">
         </mat-form-field>
         <button mat-raised-button color="primary" type="submit" (click)="setNewDate()">JETZT!</button>
+        <mat-form-field>
+          <input matInput placeholder="Ziel" type="text">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Betrag" type="number">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-select [(ngModel)]="selectedOption">
+                <mat-option *ngFor="let option of options" [value]="option.value">{{option.label}}</mat-option>
+              </mat-select>
+          </mat-form-field>
       </div>
     </mat-card-content>
   </mat-card>
-  <app-bottom-nav-bar></app-bottom-nav-bar>  
+  <app-bottom-nav-bar></app-bottom-nav-bar>
+  

@@ -10,6 +10,12 @@ export class AddDriveComponent {
 
   currentDate: any;
 
+  selectedOption!: string;
+  options = [
+    { label: 'Kreditkarte', value: 'kk' },
+    { label: 'Bar', value: 'bar' }
+  ];
+
   constructor(private router: Router) { }
 
   setNewDate()
