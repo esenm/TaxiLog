@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-drive',
@@ -16,7 +15,7 @@ export class AddDriveComponent {
     { label: 'Bar', value: 'bar' }
   ];
 
-  constructor(private router: Router) { }
+  constructor() { }
 
   setNewDate() {
     this.time = new Date().toLocaleTimeString();
