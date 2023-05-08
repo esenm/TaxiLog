@@ -20,6 +20,7 @@ import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 
 import { MatSelectModule } from '@angular/material/select';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { MatSelectModule } from '@angular/material/select';
     LoginComponent,
     AddDriveComponent,
     BottomNavBarComponent,
-    ButtonComponent
+    ButtonComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
