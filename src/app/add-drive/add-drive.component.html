@@ -1,9 +1,12 @@
 <mat-card class="container">
-    <mat-card-content class="login">
-
-<button type="submit" (click)="logout()">Logout</button>
-      
+    <mat-card-content class="add-drive">
+      <div class="form-container">
+        <mat-form-field>
+          <input matInput placeholder="Enter your name" type="time">
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit" (click)="setNewDate()">Logout</button>
+      </div>
+      <label>Die jetztige Zeit ist: {{currentDate | date: 'dd/MM/yyyy hh:mm a'}}</label>
     </mat-card-content>
-</mat-card>
-
-  <app-bottom-nav-bar></app-bottom-nav-bar>
+  </mat-card>
+  <app-bottom-nav-bar></app-bottom-nav-bar>  

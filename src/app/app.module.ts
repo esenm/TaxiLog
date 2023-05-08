@@ -16,7 +16,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { BottomNavBarComponent } from './ui-components/bottom-nav-bar/bottom-nav-bar.component';
 import { ButtonComponent } from './ui-components/button/button.component';
-
+import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
@@ -39,6 +39,7 @@ import { MatIconModule } from '@angular/material/icon';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatTabsModule,
+    FormsModule,
     MatIconModule
   ],
   providers: [],
