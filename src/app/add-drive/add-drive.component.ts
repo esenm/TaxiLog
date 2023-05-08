@@ -27,5 +27,6 @@ export class AddDriveComponent {
     console.log("Destination: ", this.destination);
     console.log("Amount: ", this.amount);
     console.log("Selected Option: ", this.selectedOption);
+
   }
 }
