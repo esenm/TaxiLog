@@ -10,18 +10,7 @@ export class BottomNavBarComponent {
 
   constructor(private router: Router) { }
 
-  addDrive() 
-  {
-      console.log("go to home");
+  isRouteActive(route: string): boolean {
+    return this.router.isActive(route, true);
   }
-
-  profile() 
-  {
-  }
-
-  dashboard()
-  {
-  }
-
-
 }

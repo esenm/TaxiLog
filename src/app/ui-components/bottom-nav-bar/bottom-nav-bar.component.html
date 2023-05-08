@@ -1,11 +1,11 @@
 <mat-toolbar color="primary">
-  <button mat-icon-button (click)="addDrive()">
+  <button mat-icon-button routerLink="/add-drive" [ngClass]="{'selected': isRouteActive('/add-drive')}">
     <mat-icon>drive_eta</mat-icon>
   </button>
-  <button mat-icon-button>
+  <button mat-icon-button routerLink="/dashboard" [ngClass]="{'selected': isRouteActive('/dashboard')}">
     <mat-icon>dashboard</mat-icon>
   </button>
-  <button mat-icon-button (click)="profile()">
+  <button mat-icon-button routerLink="/profile" [ngClass]="{'selected': isRouteActive('/profile')}">
     <mat-icon>account_circle</mat-icon>
   </button>
 </mat-toolbar>

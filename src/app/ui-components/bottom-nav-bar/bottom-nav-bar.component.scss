@@ -1,16 +1,19 @@
 mat-toolbar {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: black !important;
-  
-    button {
-      flex: 1;
-      color: yellow;
-      opacity: 0.3;
-    }
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black !important;
+
+  button {
+    flex: 1;
+    color: yellow;
+    opacity: 0.3;
   }
-  
+
+  .selected {
+    opacity: 1;
+  }
+}

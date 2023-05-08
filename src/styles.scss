@@ -35,5 +35,5 @@ $TaxiLog-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; background-color: #FFDB00; /* Set the background color of the page to yellow */}
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #FFDB00}
+html, body { height: 100%; background-color: #FFDB00; padding: 0; margin: 0; width: 100%;/* Set the background color of the page to yellow */}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #FFDB00;}
