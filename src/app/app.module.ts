@@ -21,6 +21,7 @@ import { MatIconModule } from '@angular/material/icon';
 
 import { MatSelectModule } from '@angular/material/select';
 import { ProfileComponent } from './profile/profile.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { ProfileComponent } from './profile/profile.component';
     AddDriveComponent,
     BottomNavBarComponent,
     ButtonComponent,
-    ProfileComponent
+    ProfileComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
