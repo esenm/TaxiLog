@@ -2,11 +2,10 @@
     <mat-card-content class="add-drive">
       <div class="form-container">
         <mat-form-field>
-          <input matInput placeholder="Enter your name" type="time">
+          <input matInput placeholder="Enter your name" [value]="currentDate | date:'HH:mm'" type="time">
         </mat-form-field>
-        <button mat-raised-button color="primary" type="submit" (click)="setNewDate()">Logout</button>
+        <button mat-raised-button color="primary" type="submit" (click)="setNewDate()">JETZT!</button>
       </div>
-      <label>Die jetztige Zeit ist: {{currentDate | date: 'dd/MM/yyyy hh:mm a'}}</label>
     </mat-card-content>
   </mat-card>
   <app-bottom-nav-bar></app-bottom-nav-bar>  

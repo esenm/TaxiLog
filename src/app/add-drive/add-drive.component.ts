@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-add-drive',
@@ -17,10 +16,4 @@ export class AddDriveComponent {
   {
     this.currentDate = new Date();
   }
-
-  logout()
-  {
-    this.router.navigate(['']);
-  }
-
 }
