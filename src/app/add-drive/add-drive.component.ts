@@ -22,4 +22,9 @@ export class AddDriveComponent {
   {
     this.currentDate = new Date();
   }
+
+  save()
+  {
+    console.log("saved!");
+  }
 }

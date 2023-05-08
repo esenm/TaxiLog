@@ -4,21 +4,12 @@
   background-color: #FFDB00;
   display: flex;
   align-items: center;
-}
-
-mat-card-content {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: auto;
-  height: calc(100% - 48px);
 }
 
 .form-container {
   display: flex;
   align-items: center;
-  height: 48px;
   flex-wrap: wrap;
 }
 
@@ -44,4 +35,10 @@ button {
 input[type="text"],
 input[type="number"] {
   width: 100%;
+}
+
+.submitButton {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50%;
 }

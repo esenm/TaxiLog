@@ -12,12 +12,15 @@
           <input matInput placeholder="Betrag" type="number">
         </mat-form-field>
         <mat-form-field>
-            <mat-select [(ngModel)]="selectedOption">
-                <mat-option *ngFor="let option of options" [value]="option.value">{{option.label}}</mat-option>
-              </mat-select>
-          </mat-form-field>
+          <mat-select [(ngModel)]="selectedOption">
+            <mat-option *ngFor="let option of options" [value]="option.value">{{option.label}}</mat-option>
+          </mat-select>
+        </mat-form-field>
       </div>
     </mat-card-content>
+    <div class="submitButton">
+        <button mat-raised-button color="primary" type="submit" (click)="save()">Speichern</button>
+      </div>
   </mat-card>
   <app-bottom-nav-bar></app-bottom-nav-bar>
   
