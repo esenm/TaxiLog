@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { MAT_DATE_FORMATS, DateAdapter } from '@angular/material/core';
+
 
 @Component({
   selector: 'app-add-drive',
@@ -16,27 +18,25 @@ export class AddDriveComponent {
     { label: 'Bar', value: 'bar' }
   ];
 
+  selectedDate = new Date();
+
   constructor(private snackBar: MatSnackBar) { }
 
-  setNewDate() {
-    this.time = new Date().toLocaleTimeString();
-  }
-
   resetValues() {
-    this.time = '';
+    //reset values except date
     this.destination= '';
     this.amount= 0;
     this.selectedOption = '';
   }
 
   save() {
-    console.log("Time: ", this.time);
+    console.log("Date: ", this.selectedDate);
     console.log("Destination: ", this.destination);
     console.log("Amount: ", this.amount);
     console.log("Selected Option: ", this.selectedOption);
 
     this.snackBar.open('Ihre Fahrt wurde hinzugefügt!', 'Schließen', {
-      duration: 5000, horizontalPosition: 'center',
+      duration: 4000, horizontalPosition: 'center',
       verticalPosition: 'top'
     });
 

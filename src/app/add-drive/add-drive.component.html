@@ -3,16 +3,21 @@
     <mat-card-content class="add-drive">
       <div class="form-container">
         <mat-form-field>
-          <input matInput placeholder="Zeit" [(ngModel)]="time" type="time">
-        </mat-form-field>
-        <button mat-raised-button color="primary" type="button" (click)="setNewDate()">JETZT!</button>
-        <mat-form-field>
-          <input matInput placeholder="Ziel" [(ngModel)]="destination" type="text">
-        </mat-form-field>
-        <mat-form-field>
-          <input matInput placeholder="Betrag" [(ngModel)]="amount" type="number">
+          <mat-label>Datum</mat-label>
+          <input matInput [matDatepicker]="picker" placeholder="Choose a date" [ngModel]="selectedDate">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
         <mat-form-field>
+          <mat-label>Ziel</mat-label>
+          <input matInput [(ngModel)]="destination" type="text">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Betrag</mat-label>
+          <input matInput [(ngModel)]="amount" type="number">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Zahlungsmethode</mat-label>
           <mat-select [(ngModel)]="selectedOption">
             <mat-option *ngFor="let option of options" [value]="option.value">{{option.label}}</mat-option>
           </mat-select>
