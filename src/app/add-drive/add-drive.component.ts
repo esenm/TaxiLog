@@ -24,8 +24,8 @@ export class AddDriveComponent {
 
   resetValues() {
     //reset values except date
-    this.destination= '';
-    this.amount= 0;
+    this.destination = '';
+    this.amount = 0;
     this.selectedOption = '';
   }
 
@@ -39,7 +39,6 @@ export class AddDriveComponent {
       duration: 4000, horizontalPosition: 'center',
       verticalPosition: 'top'
     });
-
     //this.resetValues();
   }
 }
