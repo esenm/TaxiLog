@@ -6,7 +6,16 @@
   
   .top-section {
     flex: 1;
-    /* Hier können Sie die gewünschten Styles für den oberen Abschnitt hinzufügen */
+
+
+    .circle-card {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      margin-top: 15%;
+    }
+    
   }
   
   .bottom-section {
@@ -14,6 +23,8 @@
     background-color: white;
     
   }
+
+
 
   .profil-infos {
     display: flex;
@@ -35,4 +46,15 @@
     label:last-child {
       border-bottom: none;
     }
+  }
+
+  .mat-card-header-text {
+    display: flex;
+    justify-content: center;
+    font-size: 150px;
+  }
+  
+  .mat-card-title-center {
+    text-align: center;
+    margin: 0 auto;
   }
