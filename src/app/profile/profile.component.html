@@ -1,3 +1,31 @@
-<p>profile works!</p>
+<div class="page-container">
+    <div class="top-section">
+      <!-- oberer Abschnitt -->
+    </div>
+    <div class="bottom-section">
+      <!-- unterer Abschnitt mit Material Card -->
+      <div class="profil-infos">
+        <h5>PROFIL BEARBEITEN</h5>
+        <mat-form-field appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput type="text" [(ngModel)]="name" placeholder="Name" />
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Telefon</mat-label>
+          <input matInput type="text" [(ngModel)]="phone" placeholder="Telefon" />
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Code</mat-label>
+          <input matInput type="text" [(ngModel)]="code" placeholder="Code" />
+        </mat-form-field>
+        <div class="submitButton">
+          <button mat-raised-button color="primary" type="button">Speichern</button>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+  
 
 <app-bottom-nav-bar></app-bottom-nav-bar>
