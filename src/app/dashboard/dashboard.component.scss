@@ -1,8 +1,11 @@
-mat-card {
-    padding: 10px;
-    margin: 20px;
-
-    mat-card-title {
-        margin-bottom: 10px;
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; // center vertically
+    align-items: center; // center horizontally
+    
+    .text {
+      margin-bottom: 20px; // add some margin between the elements
     }
-}
+  }
+  
