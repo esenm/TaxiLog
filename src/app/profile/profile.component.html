@@ -4,8 +4,6 @@
       <mat-card-header class="mat-card-header-text">
         <mat-card-title class="mat-card-title-center">{{ avatarText }}</mat-card-title>
       </mat-card-header>
-      <mat-card-content>
-      </mat-card-content>
     </mat-card>   
     <button mat-stroked-button class="centered-button" (click)="logout()">
       <mat-icon>logout</mat-icon>
@@ -17,15 +15,15 @@
       <h5>PROFIL BEARBEITEN</h5>
       <mat-form-field appearance="fill">
         <mat-label>Name</mat-label>
-        <input matInput type="text" [(ngModel)]="name" placeholder="Name" />
+        <input matInput type="text" [(ngModel)]="name" placeholder="Name"/>
       </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Telefon</mat-label>
-        <input matInput type="text" [(ngModel)]="phone" placeholder="Telefon" />
+        <input matInput type="text" [(ngModel)]="phone" placeholder="Telefon"/>
       </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Code</mat-label>
-        <input matInput type="text" [(ngModel)]="code" placeholder="Code" />
+        <input matInput type="text" [(ngModel)]="code" placeholder="Code"/>
       </mat-form-field>
       <div class="submitButton">
         <button mat-raised-button type="button" (click)="updateProfileInfo()">Aktualisieren</button>
