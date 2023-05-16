@@ -1,21 +1,39 @@
 <div class="container">
   <div class="text">
-    <h5>Selektieren Sie bitte einen Datum: </h5>
+    <h3>Dashboard</h3>
   </div>
-  <div>
-    <mat-form-field>
-      <mat-label>Datum</mat-label>
-      <input matInput [matDatepicker]="picker" placeholder="Choose a date" [ngModel]="selectedDate">
-      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-      <mat-datepicker #picker></mat-datepicker>
-    </mat-form-field>
-  </div>
-
-  <div class="submitButton">
-    <button mat-raised-button type="button">Suchen</button>
-  </div>
-
 </div>
 
+<div class="cards">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Heute</mat-card-title>
+      <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions>
+      <button mat-button>Detailansicht</button>
+    </mat-card-actions>
+  </mat-card>
+  <br />
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Letzte Woche</mat-card-title>
+      <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions>
+      <button mat-button>Detailansicht</button>
+    </mat-card-actions>
+  </mat-card>
+  <br />
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Letzter Monat</mat-card-title>
+      <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions>
+      <button mat-button>Detailansicht</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
 
 <app-bottom-nav-bar></app-bottom-nav-bar>
